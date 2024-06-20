@@ -1,0 +1,28 @@
+{
+  "name": "astro-ghost-base",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "content": "shx rm src/content/blog/* && shx rm src/content/page/* && node --loader ts-node/esm importer.ts",
+    "dev": "astro dev",
+    "start": "npm run dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/mdx": "^3.1.0",
+    "@astrojs/sitemap": "^3.1.5",
+    "astro": "^4.10.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@ts-ghost/content-api": "^4.0.12",
+    "@types/sanitize-html": "^2.11.0",
+    "dotenv": "^16.4.5",
+    "sanitize-html": "^2.13.0",
+    "shx": "0.3.4",
+    "ts-node": "^10.9.2"
+  }
+}

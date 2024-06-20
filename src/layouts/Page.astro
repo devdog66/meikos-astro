@@ -1,0 +1,29 @@
+---
+import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro"
+import Meta from "../components/Meta.astro"
+import Preloads from "../components/Preloads.astro"
+
+interface Props {
+	title: string;
+	description: string;
+    robots: string;
+	image?: string;
+}
+const { title, description, robots, image = 'favicon.svg'} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Meta title={title} description={description} 
+        robots={robots} image={image} />
+        <Preloads />
+    </head>
+    <body>
+        <Header />
+        <main>
+            <slot />
+        </main>
+        <Footer />
+    </body>
+</html>

@@ -1,0 +1,40 @@
+/* Raleway regular */
+@font-face {
+	font-family: "Raleway";
+	src: url("/assets/fonts/Raleway-VariableFont_wght.woff") format("woff"),
+		url("/assets/fonts/Raleway-VariableFont_wght.ttf") format("truetype"); /* Safari, Android, iOS */
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("/assets/fonts/Rubik-VariableFont_wght.woff") format("woff")
+		url("/assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype"); /* Safari, Android, iOS */
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("/assets/fonts/Montserrat-VariableFont_wght.woff") format("woff")
+		url("/assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype"); /* Safari, Android, iOS */
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Courgette";
+	src: url("/assets/fonts/Courgette-Regular.woff") format("woff")
+		url("/assets/fonts/Courgette-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "JuliusSansOne";
+	src: url("/assets/fonts/JuliusSansOne-Regular.woff") format("woff"),
+		url("/assets/fonts/JuliusSansOne-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+	font-weight: 400;
+	font-style: normal;
+}

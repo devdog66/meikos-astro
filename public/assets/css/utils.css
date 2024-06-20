@@ -1,0 +1,24 @@
+.u-permalink {
+	bottom: 0;
+	left: 0;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 50;
+}
+
+.u-placeholder {
+    background-color: var(--lighter-gray-color);
+    position: relative;
+}
+
+.u-object-fit {
+    height: 100%;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

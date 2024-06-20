@@ -1,0 +1,55 @@
+<header>
+    <nav class="thmLtGray w3-card w3-bar w3-padding">
+        <a class="w3-bar-item navItem logo" href="/">Meikos Consulting</a>
+        <div class="w3-right w3-hide-small w3-hide-medium">
+            <a class="w3-bar-item navItem" href="/page/pricing">
+                <i class="fa fa-usd"></i>
+                Pricing</a>
+            <a class="w3-bar-item navItem" href="/page/services">
+                <i class="fa fa-th"></i>
+                Services</a>
+            <a class="w3-bar-item navItem" href="/app/contact">
+                <i class="fa fa-envelope"></i>
+                Contact</a>
+        </div>
+
+        <!--Hamburger-->
+        <div class="w3-right w3-hide-large w3-dropdown-hover">
+            <i class="fa fa-bars w3-padding-16"></i>
+            <div class="w3-dropdown-content w3-bar-block navHamburger">
+                <a class="w3-bar-item navItem" href="/">
+                    <i class="fa fa-home"></i>
+                    Home</a>
+                <a class="w3-bar-item navItem" href="/pricing">
+                    <i class="fa fa-usd"></i>
+                    Pricing</a>
+                <a class="w3-bar-item navItem" href="/services">
+                    <i class="fa fa-th"></i>
+                    Services</a>
+                <a class="w3-bar-item navItem" href="/contact-me">
+                    <i class="fa fa-envelope"></i>
+                    Contact</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<style>
+    header{
+        top:0;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .navItem{
+        text-decoration: none;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .navItem:hover{
+        color: var(--color-soft-black);
+    }
+</style>

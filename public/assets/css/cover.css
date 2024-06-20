@@ -1,0 +1,48 @@
+.cover{
+    font-family: Raleway;
+    animation: opac 4s;
+    height: 100vh;
+}
+
+.coverImg{
+    left:0;
+    top:0;
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: brightness(70%);
+}
+
+.coverNavItem{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px gray;
+}
+
+.coverHamburger{
+    position: absolute;
+    z-index: 10;
+}
+
+.coverRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 6px;
+    padding-right: 6px;
+}
+
+.coverDescription{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 1px 1px gray;
+}
+
+.coverHeader{
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}

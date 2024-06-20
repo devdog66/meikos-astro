@@ -1,0 +1,49 @@
+.postAuthor{
+    overflow: hidden;
+}
+
+.postAuthor img {
+    
+    height: 68px;
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 68px;
+    border-radius: 50%;
+}
+
+.postAuthorName{
+    font-family: Rubik;
+    font-weight: 600;
+}
+
+.postAuthorInfo{
+    color: gray;
+    font-size: small;
+}
+
+.postImg img{
+    max-width: 640px;
+    max-height: 420px;
+    min-width: 640px;
+    min-height: 420px;
+}
+
+.postArticle{
+    width: 60%;
+}
+
+.postNav{
+    vertical-align: bottom;
+    display: inline;
+}
+
+.postNav span{
+    vertical-align: top;
+    font-family: Rubik;
+    text-transform: uppercase;
+}
+
+.postNav a{
+    text-decoration: none;
+}
+

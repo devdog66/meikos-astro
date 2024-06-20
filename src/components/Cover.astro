@@ -1,0 +1,68 @@
+---
+interface Props {
+	title: string;
+	description: string;
+    robots: string;
+	cover_image: string;
+}
+
+const cover = Astro.props;
+
+---
+
+<div class="cover w3-display-container">
+    <img class="coverImg" src={cover.cover_image} alt={cover.title}>
+    <header class="coverHeader">
+        <nav class="w3-bar w3-padding w3-hide-small w3-hide-medium coverNavItem">
+
+            <div class="w3-bar coverNavItem">
+                <a class="w3-bar-item navItem" href="/page/pricing">
+                    <i class="fa fa-usd"></i>
+                    Pricing</a>
+                <a class="w3-bar-item navItem" href="/page/services">
+                    <i class="fa fa-th"></i>
+                    Services</a>
+                <a class="w3-bar-item navItem" href="/app/contact">
+                    <i class="fa fa-envelope"></i>
+                    Contact</a>
+            </div>
+
+            <div class="coverRight">
+                <a class="w3-bar-item coverNavItem logo" href="/">
+                    {cover.title}
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <!--Hamburger-->
+    <div class="w3-hide-large w3-padding">
+        <div class="w3-bar coverNavItem coverHamburger">
+            <a class="w3-bar-item navItem" href="/">
+                <i class="fa fa-home"></i>
+                Home</a>
+            <a class="w3-bar-item navItem" href="/page/pricing">
+                <i class="fa fa-usd"></i>
+                Pricing</a>
+            <a class="w3-bar-item navItem" href="/page/services">
+                <i class="fa fa-th"></i>
+                Services</a>
+            <a class="w3-bar-item navItem" href="/app/contact">
+                <i class="fa fa-envelope"></i>
+                Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="w3-display-middle">
+            <p class="coverDescription"><b>{cover.description}</b> </p>
+        </section>
+        <div class="w3-display-bottommiddle coverNavItem w3-margin-bottom w3-padding-16" >
+            <a href="#postList">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 256 256" class="icon">
+                <rect width="256" height="256" fill="none"></rect><polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline>
+            </svg>
+            </a>
+        </div>
+    </main>
+</div>

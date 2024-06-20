@@ -1,0 +1,50 @@
+.siteMainMiddle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.centeredContainer {
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+    min-height: 84vh;
+}
+
+.centeredContent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    font-family: Montserrat;
+}
+
+.pricingTable ul li {
+    min-height: 75px;
+}
+
+.pricingTableHeader {
+    min-height: 169px !important;
+}
+
+
+.site-content {
+    flex-grow: 1;
+    padding: 6vmin 0;
+}
+
+.site-main {
+    padding: 16px;
+    width: 70%;
+}

@@ -1,0 +1,37 @@
+.postList {
+    font-size: smaller;
+    overflow: auto;
+    font-family: Raleway;
+}
+
+.postListImage {
+    height: 100px;
+    width: 160px;
+}
+
+.postLink{
+    text-decoration: none;
+}
+
+.postHeader {
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.postDescription {
+    text-overflow: ellipsis;
+    /* enables ellipsis */
+    overflow: hidden;
+    /* keeps the element from overflowing its parent */
+    padding-top: 12px;
+    font-size: medium;
+}
+
+.postDate{
+    padding-top: 12px;
+    color: gray;
+}
+
+.rectangle{
+    background-color: lightgray;
+}

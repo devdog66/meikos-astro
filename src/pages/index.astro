@@ -1,0 +1,38 @@
+---
+import Cover from "../components/Cover.astro";
+import Footer from "../components/Footer.astro"
+import Meta from "../components/Meta.astro"
+import Preloads from "../components/Preloads.astro"
+import FeaturedPosts from "../components/FeaturedPosts.astro";
+
+interface Props {
+	title: string;
+	description: string;
+    robots: string;
+	image?: string;
+    cover_image: string;
+}
+
+const home = Astro.props;
+home.cover_image = "http://ghostcms.meikos.internal/content/images/2024/06/architecture-sky-skyline-sunlight-glass-building-597379-pxhere.com-2.jpg";
+home.description = "Personal software services at affordable prices. 24 years of experience.";
+home.title = "Meikos Consulting";
+home.robots = "index,follow";
+
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Meta title={home.title} description={home.description} 
+        robots={home.robots} image={home.image} />
+        <Preloads />
+    </head>
+    <body>
+        <Cover title={home.title} description={home.description}
+        robots={home.robots} cover_image={home.cover_image}/>
+        <main>
+            <FeaturedPosts />
+        </main>
+        <Footer />
+    </body>
+</html>

@@ -1,0 +1,29 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import Page from "../../layouts/Page.astro";
+
+export async function getStaticPaths() {
+	const posts = await getCollection('page');
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+type Props = CollectionEntry<'page'>;
+const page = Astro.props;
+const { Content } = await page.render();
+const hasHeroImage = (page.data.heroImage != "none" ?? false);
+---
+
+<Page title={page.data.title} description={page.data.description} 
+    robots="index,follow">
+    <main>
+        <h1 class="w3-center">{page.data.title}</h1>
+        {hasHeroImage && 
+            <figure class="postImg w3-mobile w3-center">
+                <img src={page.data.heroImage} alt={page.data.title} class="w3-mobile" loading="lazy">
+            </figure>
+        }
+        <Content />
+    </main>
+</Page>

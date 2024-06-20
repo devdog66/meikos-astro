@@ -1,0 +1,57 @@
+.navItem{
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    font-family: Rubik;
+}
+
+.navItem:hover{
+    opacity: .7;
+}
+
+.navHamburger{
+    right:0px;
+    top: 36px;
+}
+
+.logo{
+    font-family: "Julius Sans One";
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+    vertical-align: center;
+}
+
+.secondaryNav a{
+    text-decoration: none;
+    font-size: medium;
+}
+
+.secondaryNav a:hover{
+    text-decoration: underline;
+}
+
+.secondaryNav ul{
+    list-style: none;
+}
+
+.secondaryNav li{
+    display: inline;
+}
+
+.secondNavHamburger{
+    height: 120px;
+    background-color: white;
+    z-index: 20;
+    top: 5px;
+}
+
+.secondNavHamburger .navItem{
+    color:black;
+}
+
+.copyNotice{
+    font-size: smaller;
+}
+
